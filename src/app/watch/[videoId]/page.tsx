@@ -41,24 +41,24 @@ export default async function WatchPage({ params }: WatchPageProps) {
           width: "100%",
           paddingBottom: "56.25%", // 16:9 ratio
           height: 0,
-          backgroundColor: "#000",
+          // backgroundColor: "#000",
           borderRadius: "12px",
           overflow: "hidden",
           boxShadow: "0 4px 20px rgba(0,0,0,0.15)",
         }}
       >
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`}
+          src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&controls=1`}
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           style={{
+
             position: "absolute",
             top: 0,
             left: 0,
-            width: "100%",
-            height: "100%",
-            border: 0,
+            width: "80%",
+            height: "80%",
           }}
         />
       </div>
